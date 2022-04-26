@@ -190,3 +190,41 @@ ch1Animation
     metro.config.js
     package-lock.json
     package.json
+
+//--------------------------------------------------------------
+# วันที่ 2
+//--------------------------------------------------------------
+Step 10: ติดตั้ง react-native-animatable
+--
+npm install react-native-animatable
+
+Step 11: ติดตั้ง Lottie animation
+---
+npm i lottie-react-native
+npm i lottie-ios@3.2.3
+
+ขึ้นโปรเจ็กต์ใหม่
+---
+git clone https://github.com/iamsamitdev/ch1Animation.git ch2ContextAPI
+
+เปิดเข้า VSCode
+---
+code ch2ContextAPI -r
+
+Context API
+
+What is Context API?
+---
+Context provides a way to pass data through the component tree without having to pass props down manually at every level
+
+Building Block of Context API
+---
+We can divide Context API in to three parts.
+Context
+First import React from ‘react’. Then, createContext() function from React which takes default value as a first argument. In here optional to pass a Java Script object. There can be multiple context in a single application
+
+Provider
+After create context, Provider Provides the capability to access context which wrapped from it. It provides the data and functions to pass down to all the components.
+
+Consumer
+Consumer allows to access the value to child components which parent that is wrapped by Provider. It has two types.
